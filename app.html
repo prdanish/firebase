@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    Main Page
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script type="module">
+      const firebaseConfig = {
+        apiKey: "AIzaSyDs2CKMiUmA2xkOKdImMEo2Elgw16hPSGo",
+        authDomain: "web-development-6e20c.firebaseapp.com",
+        projectId: "web-development-6e20c",
+        storageBucket: "web-development-6e20c.appspot.com",
+        messagingSenderId: "284418049133",
+        appId: "1:284418049133:web:76c36075a9a2880563eb64",
+        measurementId: "G-T8NRJ8B6F9",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <script src="app.js"></script>
+</html>
+</head>
+<body>
+  <input type="email" id="email" placeholder="Email" />
+  <input type="password" id="password" placeholder="password" /> <br />
+  <button onclick="signUp()">SignUp</button> <br />
+  <p><a href="signin.html">Sign In</a></p>
+  <p><a href="forgotpassword.html">Forgot password</a></p>
+  <button onclick="currentUser()">Current User</button>
+</body>
+</html>

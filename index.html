@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDJqJ1dZSeZzusluGLwZmEjaga_65adazc",
+        authDomain: "hello-world-a9c8a.firebaseapp.com",
+        projectId: "hello-world-a9c8a",
+        storageBucket: "hello-world-a9c8a.appspot.com",
+        messagingSenderId: "860167000521",
+        appId: "1:860167000521:web:1777cb7e26fe877ed59818",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="password" /> <br />
+    <button onclick="signUp()">SignUp</button> <br />
+    <p><a href="signin.html">Sign In</a></p>
+    <p><a href="forgotpassword.html">Forgot password</a></p>
+    <button onclick="currentUser()">Current User</button>
+
+    <h1>home page</h1>
+    <script src="app.js"></script>
+  </body>
+</html>
